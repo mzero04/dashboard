@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NamaApp</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="brand-mark" data-initial>N</span>
+        <span data-text="name">NamaApp</span>
+      </a>
+      <nav class="nav" aria-label="Utama">
+        <a class="link" href="#fitur">Fitur</a>
+        <a class="link" href="#mulai">Cara mulai</a>
+        <a class="link" href="/dashboard">Dashboard</a>
+        <a class="btn btn-primary btn-sm" data-app-link data-text="ctaLabel" href="#">Buka aplikasi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1 data-text="tagline">Kelola pekerjaan harian tim kamu dari satu tempat</h1>
+          <p class="lead" data-text="description">Deskripsi singkat aplikasi.</p>
+          <div class="actions">
+            <a class="btn btn-primary" data-app-link data-text="ctaLabel" href="#">Buka aplikasi</a>
+            <a class="btn btn-ghost" href="/dashboard">Lihat dashboard</a>
+          </div>
+        </div>
+
+        <div id="mockup" class="window" aria-hidden="true">
+          <div class="window-bar"><i></i><i></i><i></i></div>
+          <div class="window-body">
+            <div class="side"><i></i><i></i><i></i><i></i></div>
+            <div class="main">
+              <div class="kpis">
+                <div class="kpi"><b></b><span></span></div>
+                <div class="kpi"><b></b><span></span></div>
+                <div class="kpi"><b></b><span></span></div>
+              </div>
+              <div class="chart">
+                <span style="--h:38%"></span><span style="--h:56%"></span><span style="--h:44%"></span><span style="--h:72%"></span>
+                <span style="--h:61%"></span><span style="--h:88%"></span><span style="--h:70%"></span><span style="--h:96%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Angka ringkas">
+      <div class="wrap"><dl id="stats"></dl></div>
+    </section>
+
+    <section class="section" id="fitur">
+      <div class="wrap split">
+        <h2>Yang bisa kamu lakukan</h2>
+        <div id="features" class="feature-list"></div>
+      </div>
+    </section>
+
+    <section class="section" id="mulai" style="padding-top:0">
+      <div class="wrap">
+        <h2>Mulai dalam tiga langkah</h2>
+        <ol id="steps" class="steps"></ol>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="closing">
+          <div>
+            <h2 data-text="closingTitle">Siap mencoba?</h2>
+            <p data-text="closingText">Buka aplikasinya sekarang.</p>
+          </div>
+          <a class="btn btn-primary" data-app-link data-text="ctaLabel" href="#">Buka aplikasi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> <span data-text="name">NamaApp</span></span>
+      <a id="contact" href="#">Hubungi kami</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+</head>
+<body data-dashboard>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="brand-mark" data-initial>N</span>
+        <span data-text="name">NamaApp</span>
+      </a>
+      <nav class="nav" aria-label="Utama">
+        <a class="link" href="/">Beranda</a>
+        <a class="btn btn-primary btn-sm" data-app-link data-text="ctaLabel" href="#">Buka aplikasi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="dash-head">
+      <h1 data-text="dashboardTitle">Dashboard</h1>
+      <p data-text="dashboardText">Semua aplikasi dan tautan penting di satu halaman.</p>
+    </div>
+
+    <section class="featured" aria-label="Aplikasi utama">
+      <div>
+        <h2 data-text="name">NamaApp</h2>
+        <p data-text="tagline">Tagline aplikasi.</p>
+      </div>
+      <a class="btn btn-primary" data-app-link data-text="ctaLabel" href="#">Buka aplikasi</a>
+    </section>
+
+    <div class="tools">
+      <input id="search" class="search" type="search" placeholder="Cari aplikasi atau tautan" aria-label="Cari aplikasi atau tautan">
+      <div id="chips" class="chips" role="group" aria-label="Filter kategori"></div>
+    </div>
+
+    <div id="apps" class="apps" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> <span data-text="name">NamaApp</span></span>
+      <a id="contact" href="#">Hubungi kami</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
